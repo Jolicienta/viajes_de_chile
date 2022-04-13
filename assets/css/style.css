@@ -9,6 +9,9 @@ PALETA DE COLORES:
 #DB3A1E
 #2E2E22
 */
+
+/*Propiedad dada al html para aplicar efecto smooth
+al hacer scroll al navegar en la web*/
 html {
     scroll-behavior: smooth;
 }
@@ -18,6 +21,15 @@ body {
 }
 
 
+.navbar-expand-lg .navbar-collapse {
+    padding-left: 55%;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+}
+
+/* Estilos de la sección "quiénes somos" */
 .quienes_somos {
     padding: 70px 100px 0 100px;
     width: 98.5vw;
@@ -45,6 +57,7 @@ body {
     color: white;
 }
 
+/* Estilos de la sección destacados */
 .destacados {
     padding-top: 90px;
 }
@@ -66,6 +79,7 @@ body {
     color: white;
 }
 
+/* Estilos de la sección "contacto" */
 .contacto {
     padding-top: 80px;
 }
@@ -79,7 +93,7 @@ body {
     height: 200px;
 }
 
-
+/* Estilos del footer */
 footer {
     height: 100px;
     background-color: #E2C38B;
