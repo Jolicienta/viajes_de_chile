@@ -9,3 +9,25 @@ PALETA DE COLORES:
 #DB3A1E
 #2E2E22
 */
+
+body {
+    background-color: #F7E0B7;
+}
+
+
+.quienes_somos {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin: 50px 0 70px 0;
+}
+
+.quienes_somos .row {
+    max-width: 100vw;
+}
+
+.quienes_somos .barra_avion {
+    height: 40px;
+    width: 100%;
+    background-color: #DB3A1E;
+}
