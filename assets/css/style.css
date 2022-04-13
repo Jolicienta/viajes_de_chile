@@ -9,6 +9,9 @@ PALETA DE COLORES:
 #DB3A1E
 #2E2E22
 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #F7E0B7;
@@ -16,8 +19,7 @@ body {
 
 
 .quienes_somos {
-    margin: 50px 0 50px 0;
-    padding: 0 100px 0 100px;
+    padding: 70px 100px 0 100px;
     width: 98.5vw;
 }
 
@@ -44,8 +46,7 @@ body {
 }
 
 .destacados {
-    margin-bottom: 100px;
-    margin-bottom: 70px;
+    padding-top: 90px;
 }
 
 .destacados .container-fluid {
@@ -65,6 +66,9 @@ body {
     color: white;
 }
 
+.contacto {
+    padding-top: 80px;
+}
 
 .contacto .container-fluid {
     padding: 0 100px 0 100px;
@@ -84,6 +88,16 @@ footer {
     padding: 0 200px 0 200px;
 }
 
+footer a {
+    color: #2E2E22;
+    text-decoration: none;
+}
+
+footer a h3:hover {
+    color: #DB3A1E;
+    cursor: pointer;
+}
+
 footer ul li {
     display: inline;
     margin: 0 5px 0 5px;
@@ -91,4 +105,10 @@ footer ul li {
 
 footer .fa-brands {
     font-size: 30px;
+    color: #2E2E22;
+}
+
+footer .fa-brands:hover {
+    color: #DB3A1E;
+    cursor: pointer;
 }
