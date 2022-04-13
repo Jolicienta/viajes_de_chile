@@ -70,10 +70,11 @@
 
         <!-- seccion "quienes somos" -->
         <div class="container-fluid quienes_somos">
-            <h3 style="text-align: center;">QUIENES SOMOS?</h3>
+            <h3 style="text-align: center; margin-bottom: 50px;">QUIENES SOMOS?</h3>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="barra_avion">
+                    <div class="barra avion" style="display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-plane" style="font-size: 30px; color: white;"></i>
                     </div>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae aliquam
@@ -95,11 +96,13 @@
                     purus tempus vehicula. Maecenas laoreet venenatis tellus at volutpat. Donec
                     congue iaculis ligula, nec ultrices magna imperdiet.
                     </p>
-                    <div class="barra_avion">
+                    <div class="barra mountain">
+                        <i class="fa-solid fa-mountain"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="barra_avion">
+                    <div class="barra route">
+                        <i class="fa-solid fa-route"></i>
                     </div>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae aliquam
@@ -159,28 +162,35 @@
         </section>
 
         <section class="contacto">
-            <div class="container">
-                <h3 style="text-align: center; margin-bottom: 50px;">CONTACTO</h3>
+            <div class="container-fluid">
+                <h3 style="text-align: center; margin-bottom: 30px;">CONTACTO</h3>
                 <form>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="exampleInputPassword1" class="form-label">Asunto</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                    <input type="password" class="form-control" id="inputMessage">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" style="background-color: #9EAFA7; border: none;">Enviar</button>
                 </form>
-
             </div>
-
         </section>
+
+        <footer>
+            <h3>VIAJES CHILE</h3>
+            <ul class="ms-auto">
+                <li><i class="fa-brands fa-github-square"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-twitter-square"></i></li>
+                <li><i class="fa-brands fa-facebook-square"></i></li>
+            </ul>
+        </footer>
 
 
 

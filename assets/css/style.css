@@ -29,12 +29,19 @@ body {
     padding: 0 1.5px 0 20px;
 }
 
-.quienes_somos .barra_avion {
+.quienes_somos .barra {
     height: 40px;
     width: 100%;
     background-color: #DB3A1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.fa-solid {
+    font-size: 30px;
+    color: white;
+}
 
 .destacados {
     margin-bottom: 100px;
@@ -45,6 +52,43 @@ body {
     padding: 0 100px 0 100px;
 }
 
+.card {
+    border: none;
+}
+
 .card-img-top {
     height: 157px;
+}
+
+.card-body {
+    background-color: #9EAFA7;
+    color: white;
+}
+
+
+.contacto .container-fluid {
+    padding: 0 100px 0 100px;
+    margin: 0 0 70px 0;
+}
+
+#inputMessage {
+    height: 200px;
+}
+
+
+footer {
+    height: 100px;
+    background-color: #E2C38B;
+    display: flex;
+    align-items: center;
+    padding: 0 200px 0 200px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 5px 0 5px;
+}
+
+footer .fa-brands {
+    font-size: 30px;
 }
