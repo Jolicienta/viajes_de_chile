@@ -20,6 +20,12 @@ body {
     background-color: #F7E0B7;
 }
 
+/* Estilos de la barra de navegación */
+
+/* estilo especial usado por jQuery al hacer scroll */
+nav.cabeceraOscura {
+  background-color: #2E2E22;
+}
 
 .navbar-expand-lg .navbar-collapse {
     padding-left: 55%;
@@ -28,6 +34,7 @@ body {
 .navbar-brand {
     margin-left: 15px;
 }
+
 
 /* Estilos de la sección "quiénes somos" */
 .quienes_somos {
