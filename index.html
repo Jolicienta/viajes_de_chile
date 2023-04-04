@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <!-- NABVAR -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#">
             <img src="assets/img/viajes.svg" alt="logo-empresa" width="30" height="24">
@@ -50,7 +50,7 @@
         </div>
     </nav>
 
-    <!-- Carrusel de imagenes -->
+    <!-- Carrusel de imágenes -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,13 +82,13 @@
     </div>
 
     <!-- Sección "quiénes somos". Esta sección desaparece en la vista mobile -->
-    <div class="container-fluid quienes_somos" id="quienes_somos">
+    <div class="container-fluid d-none d-lg-block" id="quienes_somos">
         <h3>¿QUIÉNES SOMOS?</h3>
         <div class="row">
             <!-- Primer parrafo de la sección "quiénes somos" -->
             <div class="col-lg">
-                <div class="barra avion" style="display: flex; align-items: center; justify-content: center;">
-                    <i class="fa-solid fa-plane" style="font-size: 30px; color: white;"></i>
+                <div class="container-fluid barra">
+                    <i class="fa-solid fa-plane"></i>
                 </div>
                 <p style="margin-top: 10px;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae aliquam
@@ -111,13 +111,13 @@
                     purus tempus vehicula. Maecenas laoreet venenatis tellus at volutpat. Donec
                     congue iaculis ligula, nec ultrices magna imperdiet.
                 </p>
-                <div class="barra mountain">
+                <div class="barra">
                     <i class="fa-solid fa-mountain"></i>
                 </div>
             </div>
             <!-- Tercer parrafo de la sección "quiénes somos" -->
             <div class="col-lg">
-                <div class="barra route">
+                <div class="barra">
                     <i class="fa-solid fa-route"></i>
                 </div>
                 <p style="margin-top: 10px;">
