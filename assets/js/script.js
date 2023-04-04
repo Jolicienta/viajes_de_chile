@@ -1,9 +1,9 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 200) {
-       $("nav").addClass("cabeceraOscura");
+       $("nav").addClass("navbar_dark");
     }else{
-       $("nav").removeClass("cabeceraOscura");
+       $("nav").removeClass("navbar_dark");
     }
 });
 
