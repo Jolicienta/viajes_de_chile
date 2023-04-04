@@ -60,15 +60,15 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Primera imágen del carrusel de imagenes -->
-                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Desierto de Atacama">
             </div>
             <div class="carousel-item">
                 <!-- Segunda imágen del carrusel de imagenes -->
-                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Atardecer en Isla de Pascua">
             </div>
             <div class="carousel-item">
                 <!-- Tercera imágen del carrusel de imagenes -->
-                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguino magallánico">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -81,13 +81,13 @@
         </button>
     </div>
 
-    <!-- Sección "quiénes somos". Esta sección desaparece en la vista mobile -->
+    <!-- ¿QUIÉNES SOMOS?. Esta sección desaparece en la vista mobile -->
     <div class="container-fluid d-none d-lg-block" id="quienes_somos">
-        <h3>¿QUIÉNES SOMOS?</h3>
         <div class="row">
+            <h3>¿QUIÉNES SOMOS?</h3>
             <!-- Primer parrafo de la sección "quiénes somos" -->
-            <div class="col-lg">
-                <div class="container-fluid barra">
+            <div class="col-lg plane">
+                <div class="container-fluid barra_1">
                     <i class="fa-solid fa-plane"></i>
                 </div>
                 <p style="margin-top: 10px;">
@@ -101,7 +101,7 @@
                 </p>
             </div>
             <!-- Segundo parrafo de la sección "quiénes somos" -->
-            <div class="col-lg">
+            <div class="col-lg mountain">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae aliquam
                     risus. Mauris porta suscipit purus id dignissim. Ut malesuada euismod augue.
@@ -111,13 +111,13 @@
                     purus tempus vehicula. Maecenas laoreet venenatis tellus at volutpat. Donec
                     congue iaculis ligula, nec ultrices magna imperdiet.
                 </p>
-                <div class="barra">
+                <div class="barra_2">
                     <i class="fa-solid fa-mountain"></i>
                 </div>
             </div>
             <!-- Tercer parrafo de la sección "quiénes somos" -->
-            <div class="col-lg">
-                <div class="barra">
+            <div class="col-lg route">
+                <div class="barra_3">
                     <i class="fa-solid fa-route"></i>
                 </div>
                 <p style="margin-top: 10px;">
@@ -133,10 +133,10 @@
         </div>
     </div>
 
-    <!-- Estructura HTML de la sección destacados -->
+    <!-- Destacados -->
     <div class="container-fluid" id="destacados">
-        <h3>DESTACADOS</h3>
         <div class="row">
+            <h3 class="destacados_title">DESTACADOS</h3>
             <div class="col-lg">
                 <!-- Primera card de descatados -->
                 <div class="card">
@@ -147,6 +147,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg">
                 <!-- Segunda card de descatados -->
                 <div class="card">
@@ -157,6 +158,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg">
                 <!-- Tercera card de descatados -->
                 <div class="card">
@@ -167,6 +169,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg">
                 <!-- Cuarta card de descatados -->
                 <div class="card">
@@ -180,40 +183,41 @@
         </div>
     </div>
 
-    <!-- Estructura HTML de la sección contacto -->
-    <section class="contacto" id="contacto">
-        <div>
-            <h3 style="text-align: center; margin-bottom: 30px;">CONTACTO</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" data-bs-toggle="tooltip" data-bs-placement="top" title="Por ejemplo: Juan Perez">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Asunto</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-                    <input type="password" class="form-control" id="inputMessage">
-                </div>
-                <button type="submit" class="btn btn-primary" style="background-color: #9EAFA7; border: none;">Enviar</button>
-            </form>
+    <!-- Contacto -->
+    <div class="container-fluid" id="contacto">
+        <div class="row">
+            <h3>CONTACTO</h3>
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" data-bs-toggle="tooltip" data-bs-placement="top" title="Por ejemplo: Juan Perez">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Asunto</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="floatingTextarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="">Enviar</button>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Estructura HTML del footer -->
+    <!-- Footer -->
     <footer>
-        <a href="#carouselExampleIndicators">
-            <h3>VIAJES CHILE</h3>
-        </a>
-        <ul class="ms-auto">
+        <a href="#carouselExampleIndicators"><span class="logo_footer">VIAJES CHILE</span></a>
+        <ul class="ms-auto mb-0">
             <li><i class="fa-brands fa-github-square"></i></li>
             <li><i class="fa-brands fa-linkedin"></i></li>
             <li><i class="fa-brands fa-twitter-square"></i></li>
             <li><i class="fa-brands fa-facebook-square"></i></li>
         </ul>
     </footer>
+
 
     <!-- Script de jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
