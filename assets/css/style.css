@@ -25,36 +25,64 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h2 {
-    font-family: 'Amaranth', sans-serif;
-    text-align: right;
-    padding-top: 80px;
-    margin-bottom: 40px;
-}
-
 .row {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+@media (max-width: 575.98px) {
+    .col-lg {
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-family: 'Amaranth', sans-serif;
+        text-align: right;
+        padding-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
 
 /* Navbar */
 /* Estilo especial usado por jQuery al hacer scroll */
-.navbar {
-}
-
 .navbar_dark {
   background-color: #2E2E22;
+}
+/* ------------------------------- */
+
+@media (max-width: 575.98px) {
+    .navbar {
+      background-color: #2E2E22;
+    }
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-brand span {
+    font-size: 16px;
 }
 
 @media (min-width: 992px) {
     .navbar {
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    .navbar-brand {
-        margin-left: 15px;
+    .navbar-brand span {
+        font-size: 18px;
     }
 }
 
@@ -65,7 +93,26 @@ h2 {
 
 #carouselExampleIndicators .carousel-item {
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+
+.carousel img {
+    height: 100vh;
+    width: auto;
+}
+
+@media (max-width: 575.98px) {
+    .carousel img {
+        margin-left: -150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ¿QUIÉNES SOMOS? Desaparece en vista mobile */
@@ -100,8 +147,16 @@ h2 {
 
 
 /* Destacados */
-.destacados_title {
-    margin-bottom: 60px;
+@media (max-width: 575.98px) {
+    #destacados {
+        padding-bottom: 20px;
+    }
+
+    .destacados_title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 .card {
@@ -115,18 +170,43 @@ h2 {
 }
 
 .card-img-top {
-    height: 157px;
+    height: 200px;
 }
 
 .card-body {
     background-color: #9EAFA7;
     color: white;
-    height: 180px;
+    height: 150px;
     font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    .destacados_title {
+        margin-bottom: 60px;
+    }
+
+    .card-img-top {
+        height: 157px;
+    }
+
+    .card-body {
+        height: 180px;
+    }
 }
 
 
 /* Contacto */
+@media (max-width: 575.98px) {
+    .contacto_title {
+        margin-bottom: 20px;
+        margin-top: -12px;
+    }
+
+    #contacto .btn:active {
+        background-color: #2E2E22;
+    }
+}
+
 #contacto {
     padding-bottom: 40px;
 }
@@ -187,4 +267,40 @@ footer .fa-brands {
 footer .fa-brands:hover {
     color: #DB3A1E;
     cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    footer {
+        height: 80px;
+        background-color: #E2C38B;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .logo_footer {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .logo_footer:hover {
+        color: #DB3A1E;
+        cursor: pointer;
+    }
+
+    footer ul li {
+        display: inline;
+        margin: 0 5px 0 5px;
+    }
+
+    footer .fa-brands {
+        font-size: 30px;
+        color: #2E2E22;
+    }
+
+    footer .fa-brands:hover {
+        color: #DB3A1E;
+        cursor: pointer;
+    }
 }
