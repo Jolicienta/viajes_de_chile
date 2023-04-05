@@ -1,10 +1,14 @@
-/*Tipografias usadas
-font-family: 'Permanent Marker', cursive;
-font-family: 'Roboto', sans-serif;
+/* RECURSOS GRÁFICOS
+Tipografias usadas
+Para titulos:
+font-family: 'Amaranth', sans-serif;
+
+Para otros textos:
+font-family: 'Poppins', sans-serif;
 
 PALETA DE COLORES:
 #9EAFA7
-#F7E0B7
+#fff4df
 #E2C38B
 #DB3A1E
 #2E2E22
@@ -17,11 +21,13 @@ html {
 }
 
 body {
-    background-color: #F7E0B7;
+    background-color: #fff4df;
+    font-family: 'Poppins', sans-serif;
 }
 
-h3 {
-    text-align: center;
+h2 {
+    font-family: 'Amaranth', sans-serif;
+    text-align: right;
     padding-top: 80px;
     margin-bottom: 40px;
 }
@@ -63,6 +69,14 @@ h3 {
 }
 
 /* ¿QUIÉNES SOMOS? Desaparece en vista mobile */
+#quienes_somos {
+    margin-bottom: 40px;
+}
+
+.quienes_somos_tittle {
+    margin-bottom: 60px;
+}
+
 .barra_1,
 .barra_2,
 .barra_3 {
@@ -72,6 +86,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.plane , .mountain , .route {
+    padding: 0 13px;
+    font-size: 14px;
 }
 
 .fa-solid {
@@ -102,6 +121,8 @@ h3 {
 .card-body {
     background-color: #9EAFA7;
     color: white;
+    height: 180px;
+    font-size: 14px;
 }
 
 

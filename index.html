@@ -16,8 +16,7 @@
     <!-- Link a las fuentes de google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/scss/_modal.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <!-- Link a mi hoja de estilos -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -38,7 +37,7 @@
                     <a class="nav-link" aria-current="page" href="#carouselExampleIndicators">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#quienes_somos">Quienes somos</a>
+                    <a class="nav-link" href="#quienes_somos">Quiénes somos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#destacados">Destacados</a>
@@ -84,10 +83,10 @@
     <!-- ¿QUIÉNES SOMOS?. Esta sección desaparece en la vista mobile -->
     <div class="container-fluid d-none d-lg-block" id="quienes_somos">
         <div class="row">
-            <h3>¿QUIÉNES SOMOS?</h3>
+            <h2 class="quienes_somos_tittle">¿QUIÉNES SOMOS?</h2>
             <!-- Primer parrafo de la sección "quiénes somos" -->
-            <div class="col-lg plane">
-                <div class="container-fluid barra_1">
+            <div class="col-lg plane ps-0">
+                <div class="container-fluid barra_1" data-bs-toggle="tooltip" data-bs-placement="top" title="Nuestros Planes">
                     <i class="fa-solid fa-plane"></i>
                 </div>
                 <p style="margin-top: 10px;">
@@ -111,13 +110,13 @@
                     purus tempus vehicula. Maecenas laoreet venenatis tellus at volutpat. Donec
                     congue iaculis ligula, nec ultrices magna imperdiet.
                 </p>
-                <div class="barra_2">
+                <div class="barra_2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="¡Vive una Aventura!">
                     <i class="fa-solid fa-mountain"></i>
                 </div>
             </div>
             <!-- Tercer parrafo de la sección "quiénes somos" -->
-            <div class="col-lg route">
-                <div class="barra_3">
+            <div class="col-lg route pe-0">
+                <div class="barra_3" data-bs-toggle="tooltip" data-bs-placement="top" title="Nuestras Rutas">
                     <i class="fa-solid fa-route"></i>
                 </div>
                 <p style="margin-top: 10px;">
@@ -136,7 +135,7 @@
     <!-- Destacados -->
     <div class="container-fluid" id="destacados">
         <div class="row">
-            <h3 class="destacados_title">DESTACADOS</h3>
+            <h2 class="destacados_title">DESTACADOS</h2>
             <div class="col-lg">
                 <!-- Primera card de descatados -->
                 <div class="card">
@@ -186,7 +185,7 @@
     <!-- Contacto -->
     <div class="container-fluid" id="contacto">
         <div class="row">
-            <h3>CONTACTO</h3>
+            <h2>CONTACTO</h2>
             <div class="col">
                 <form>
                     <div class="mb-3">

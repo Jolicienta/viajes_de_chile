@@ -30,7 +30,8 @@ $(document).ready(function() {
 
 });
 
-// JS del tooltip que da el ejemplo en el input "nombre" del formulario de la sección CONTACTO
+// JS del tooltip que da el ejemplo en el input "nombre" del formulario de la sección CONTACTO.
+//También se usó para describir las columnas de QUIÉNES SOMOS
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
 return new bootstrap.Tooltip(tooltipTriggerEl)
