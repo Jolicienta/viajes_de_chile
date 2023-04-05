@@ -200,6 +200,7 @@ body {
     .contacto_title {
         margin-bottom: 20px;
         margin-top: -12px;
+        text-align: center;
     }
 
     #contacto .btn:active {
@@ -230,13 +231,33 @@ input , textarea {
 
 
 /* Footer */
+@media (max-width: 575.98px) {
+    footer {
+        text-align: center;
+    }
+
+    footer a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo_footer {
+        font-size: 1.25rem;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo_footer:active {
+        color: #DB3A1E;
+    }
+}
+
 footer {
-    height: 80px;
+    height: 100px;
     background-color: #E2C38B;
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer a {
@@ -244,19 +265,10 @@ footer a {
     text-decoration: none;
 }
 
-.logo_footer {
-    font-size: 1.75rem;
-    font-weight: bold;
-}
-
-.logo_footer:hover {
-    color: #DB3A1E;
-    cursor: pointer;
-}
-
 footer ul li {
     display: inline;
-    margin: 0 5px 0 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 footer .fa-brands {
@@ -264,15 +276,9 @@ footer .fa-brands {
     color: #2E2E22;
 }
 
-footer .fa-brands:hover {
-    color: #DB3A1E;
-    cursor: pointer;
-}
-
 @media (min-width: 992px) {
     footer {
         height: 80px;
-        background-color: #E2C38B;
         display: flex;
         align-items: center;
         padding-left: 100px;
@@ -281,12 +287,16 @@ footer .fa-brands:hover {
 
     .logo_footer {
         font-size: 1.75rem;
-        font-weight: bold;
     }
 
-    .logo_footer:hover {
+    .logo_footer:hover ,
+    .fa-brands:hover {
         color: #DB3A1E;
         cursor: pointer;
+    }
+
+    footer ul {
+        margin-bottom: 0;
     }
 
     footer ul li {
@@ -294,12 +304,7 @@ footer .fa-brands:hover {
         margin: 0 5px 0 5px;
     }
 
-    footer .fa-brands {
-        font-size: 30px;
-        color: #2E2E22;
-    }
-
-    footer .fa-brands:hover {
+    footer  {
         color: #DB3A1E;
         cursor: pointer;
     }
